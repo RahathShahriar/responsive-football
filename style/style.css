@@ -19,18 +19,19 @@ main{
 /* top banner style */
 header{
     display: flex;
+    align-items: center;
     background: #2D25A0;
     height: 677px;
 
 }
 .top-banner{
-    margin: 150px 102px 165px 156px;
+    margin: 0px 100px 0px 120px;
     
 }
 .top-banner h1{
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 58px;
     margin: 0px 0px 27px 0px;
 
 }
@@ -57,8 +58,8 @@ header{
     background-color: aqua;
 }
 .banner-image img{
-    width: 556px;
-    height: 456.01px;
+    width: 556.01px;
+    height: 456px;
     padding: 135px 141px 86px 0px ;
     transform: 0.6s ease;
 }
