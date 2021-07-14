@@ -7,7 +7,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0px;
-    width: 1440px;
+    width: 100%;
 }
 main{
     background-color: white;
@@ -213,8 +213,11 @@ Media quaries mobile device
         height: 200px;
         width: auto;
     }
+    .flexible-container{
+        flex-direction: column;
+    }
     .half-width img{
-        height: 80px;
+        height: 200px;
         width: auto;
     }
     .players{
@@ -225,9 +228,15 @@ Media quaries mobile device
         flex-direction: column;
         align-items: center;
     }
+    .photo-album{
+        flex-direction: column;
+    }
     .photo-frame{
         height: 80px;
         width: auto;
+    }
+    footer{
+        flex-direction: column;
     }
     .logo img{
         height: 80px;
