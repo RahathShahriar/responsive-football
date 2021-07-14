@@ -1,39 +1,236 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+
 /* common style or utilities */
 body{
-    margin: 0px auto;
-    padding: 0px;
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f4fa;
+    margin: 0px;
+    width: 1440px;
 }
+main{
+    background-color: white;
+}
+.container{
+    margin: 70px 210px 165px 180px;
+}
+
+/* top banner style */
 header{
     display: flex;
     background: #2D25A0;
-    margin: 0px;
-    width: 677px;
-    height: 1440px;
+    height: 677px;
 
 }
 .top-banner{
     margin: 150px 102px 165px 156px;
+    
 }
-.top-banner-h1{
+.top-banner h1{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 64px;
+    margin: 0px 0px 27px 0px;
 
 }
+.anchor-button{
+    text-decoration: none;
+    height: 44px;
+    width: 168px;
+    background-color: #E02C6D;
+    font-family: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    transition: 1s ease-in-out;
+}
+.anchor-button .fa-arrow-right{
+    padding-left: 8px;
+    width: 24px;
+    height: 24px;
+}
+.anchor-button:hover{
+    width: 350px;
+    height: 60px;
+    font-size: 30px;
+    background-color: aqua;
+}
+.banner-image img{
+    width: 556px;
+    height: 456.01px;
+    padding: 135px 141px 86px 0px ;
+    transform: 0.6s ease;
+}
+.banner-image img:hover{
+    transform: scale(0.75) rotate(45deg);
+    transform-origin: top left bottom;
+}
+/* players */
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 25px;
     grid-column-gap: 30px;
     grid-row-gap: 27px;
-    padding: ;
+    
 }
 .player{
     width: 330px;
     height: 474px;
     padding: 15px;
-    box-shadow: 0 0 40px rgb(0);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    margin: 0px;
+    padding: 1px 15px 0px 15px;
+}
+.player p{
+    color: #6C6C6C;
+    font-size: 15px;
+    margin: 0px;
+    padding: 10px 15px 33px 15px;
+
+}
+.player img{
+    height: 256px;
+    width: 300px;
+    padding: 15px;
+}
+/* Fanclub & Game */
+.flexible-container{
+    display: flex;
+    padding: 0px;
+}
+.half-width{
+    margin: 150px;
+    width: 266px;
+    height: 200px;
+}
+.half-width img{
+height: 327px;
+width: 467px;
+left: 717px;
+top: 2889px;
+border-radius: 0px;
+}
+h1{
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0px;
+text-align: left;
+}
+p{
+    color: #6C6C6C;
+
+}
+.photo-album{
+    display: flex;
+    flex-direction: column;
+}
+.photo-frame{
+    width: 300px;
+    height: 400px;
+}
+.photo-frame img{
+    width: 500px;
+    height: 400px;
+    border: 2px solid rgba(252, 107, 132, 0.884);
+    border-radius: 10px;
+    margin: 50px;
+}
+.photo-detail{
+    width: 300px;
+    top: 0;
+    margin: 50px;
+}
+.photo-frame:hover{
+    display: block;
+   
+}
+.photo-detail h3{
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+}
+.photo-detail p{
+    color: cornsilk;
+}
+/* footer style */
+footer{
+    width: 483.87px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 481px 63px 471px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    height: 110px;
+}
+.logo img{
+    width: 262.1px;
+}
+.logo p{
+    font-family: 'Niconne', cursive;
+    font-size: 72.58px;
+    color: #10437A;
+}
+.footer-icon{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 164px 6px 164px;
+}
+.copyright{
+    font-size: 18px;
+    margin: 0px 124px;
 }
 
-.
+/* ------------------------
+Media quaries mobile device
+-------------------------- */
+@media only screen and (max-width:680px){
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container{
+        width: 100%;
+    }
+    .top-banner{
+        width: 100%;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .banner-image img{
+        position: ;
+        height: 200px;
+        width: auto;
+    }
+    .half-width img{
+        height: 80px;
+        width: auto;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    .player{
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo-frame{
+        height: 80px;
+        width: auto;
+    }
+    .logo img{
+        height: 80px;
+        width: auto;
+    }
+}
